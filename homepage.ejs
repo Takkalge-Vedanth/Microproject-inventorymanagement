@@ -1,0 +1,60 @@
+<html lang = "en" >
+    <head>
+        <title>FashionFeet REEBOK</title>
+        <meta charset="utf-8" >
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href = "Styles.css" >
+    </head>
+    <body class = "c4">
+        <h1 class = "c1">VDelectronics around the world</h1>
+        <h3 ><a href = "/create" class = "c2">Add New Product</a></h3>
+        <h3><a href = "/updatestock" class = "c2">Update-Stock</a></h3>
+        <h3><a href = "/deleteproduct" class = "c2">Delete-Product</a></h3>
+        <h2>Welcome</h2>
+        <p class = "c3" ><b>Electronics has had a major effect on the development of modern society. 
+The identification of the electron in 1897, along with the subsequent invention of the vacuum tube which could amplify and rectify small electrical signals, inaugurated the field of electronics and the electron age.
+ This distinction started around 1906 with the invention by Lee De Forest of the triode, which made electrical amplification of weak radio signals and audio signals possible with a non-mechanical device. 
+Until 1950, this field was called "radio technology" because its principal application was the design and theory of radio transmitters, receivers, and vacuum tubes.
+        </p>
+        <p class = "c3">
+ smart phones have a number of distinguishing features. 
+The International Telecommunication Union measures those with Internet connection, which it calls Active Mobile-Broadband subscriptions (which includes tablets, etc.). 
+In the developed world, smartphones have now overtaken the usage of earlier mobile systems. However, in the developing world, they account for around 50% of mobile telephony.
+        </p>
+        <p class = "c3">
+            A smartwatch is a wearable computer in the form of a watch; modern smartwatches provide a local touchscreen interface for daily use, while an associated smartphone app provides for management and telemetry (such as long-term biomonitoring). While early models could perform basic tasks, such as calculations, digital time telling, translations, and game-playing, 2010s smartwatches have more general functionality closer to smartphones, including mobile apps, a mobile operating system and WiFi/Bluetooth connectivity. Some smartwatches function as portable media players, 
+with FM radio and playback of digital audio and video files via a Bluetooth headset.
+ Some models, called watch phones (or vice versa), have mobile cellular functionality like making calls.
+        </p>
+
+        <center>
+            <table>
+                <tr>
+                    <th>Product Id</th>
+                    <th>Category</th>
+                    <th>color</th>
+                    <th>Stock</th>
+                    <th>Price</th>
+                </tr>
+                <% for(var i=0;i<data.length;i++) {%>
+                    <tr>
+                        <td><%= data[i].pid %></td>
+                        <td><%= data[i].pname %></td>
+                        <td><%= data[i].pcolor %></td>
+                        <td><%= data[i].pstock %></td>
+			<td><%= data[i].sp %></td>
+                    
+                    </tr>
+                    
+               <% } %>
+
+
+            </table>
+        </center>
+
+        <footer>
+            <b>VDelectronics-Play with fire</b>
+        </footer>
+
+    </body>
+</html>
